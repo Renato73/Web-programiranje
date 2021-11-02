@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Prodaja Traktora</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="Slike/logo3.png" width="200px"></a>
+    
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li>
+                    <a href="index.html">Početna</a>
+                    <a href="products.html">Traktori</a>
+                    <a href="Kontakti.html">Kontakti</a>
+                    <a href="korisnickiracun.html">Korisnički račun</a>
+                </li>
+            </ul>
+        </nav>
+        <img src="Slike/menu-icon.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    </div>
+
+    <div>
+        <div class="pocetna">
+        <div class="row">
+            <div class="col-2">
+                <h1 style="color:#fe0100">Prodaja traktora SAME<br>Prodaja rezervnih dijelova</h1>
+                <p>Servis trakora i poljoprivredne mehanizacije</p>
+                <!--<a href="" class="btn"> Istraži &#8594 </a>-->
+            </div>
+            <div class="col-1">
+                <img src="slike/pocetna3.jpg " width="700px">
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+<!--offer-->
+
+    <div class="offer">
+        <div class="row"> 
+            <div class="col-1-1">
+                <h1>O nama</h1>
+                <h3>Tvrtka AGROSAME  osnovana je 1999. godine. Kontinuiranim razvojem i ulaganjima
+                     u tvrtku, AGROSAME se svrstao među vodeće tvrtke na području trgovine poljoprivrednim proizvodima,
+                      poljoprivrednom mehanizacijom te repromaterijalom za poljoprivredu.
+                      Od 2008. smo jedini ovlašteni uvoznik i distributer poljoprivrednih strojeva 
+                      Same, te uz usku suradnju sa najvećim svjetskim proizvođačem poljoprivredne mehanizacije, 
+                      nudi integrirana rješenja i transfer nove tehnologije i najnapredniju poljoprivrednu opremu.  
+                    </h3>
+            </div>
+            <div class="col-1-1">
+                <img src="slike/fruteto.jfif" class="offer" width="600px">
+                
+            </div>
+           
+        </div>
+    </div>
+
+
+
+
+
+
+<!--featzred categories-->
+<div class="categories">
+    <div class="small-container">
+        <h1 style="margin-left:170px; margin-bottom: 20px;">Traktori</h1>
+        <div class="row">
+        <div class="col-3">
+            <a href="Delfino.html"><img src="slike/Delfino/Delfino.jpg" alt=""></a>
+            <p2 style="text-align: center; margin-left: 50px;">DELFINO </p2>
+
+        </div>
+        <div class="col-3">
+            <a href="Fruteto.html"><img src="slike/fruteto/Fruteto.jpg" alt=""></a>
+            <p2 style="text-align: center; margin-left: 50px;">FRUTTETO </p2>
+
+        </div>
+        <div class="col-3">
+            <a href="Dorado90.4.html"><img src="slike/Dorado 90.4/Dorado 90.4.jpg" alt=""></a>
+            <p2 style="text-align: center; margin-left: 50px;">DORADO 90.4 </p2>
+
+        </div>
+        <div class="col-3">
+            <a href="Dorado90.html"><img src="slike/Dorado 90/Dorado 90.jpg" alt=""></a>
+            <p2 style="text-align: center; margin-left: 50px;">DORADO NATURAL </p2>
+        </div>
+        <div class="col-3" style="margin-left: -123px;">
+            <a href="Explorer.html"><img src="slike/Explorer100/Explorer100.jpg" alt="" ></a>
+            <p2 style="text-align: center; margin-left: 50px;">EXPLORER 100 MD LS </p2>
+
+        </div>
+    </div>
+    </div>
+    
+</div>
+
+
+
+<div id="page-container">
+    <div id="content-wrap">
+      <!-- all other page content -->
+    </div>
+    <footer id="footer">
+        <div class="row">
+        <div class="col-5">
+            <img src="slike/Fotter/sama.jpg" alt="">
+
+        </div>
+        <div class="col-5">
+            <img src="slike/Fotter/deutz fahr.svg" >
+
+        </div>
+        <div class="col-5">
+            <img src="slike/Fotter/john deere.png" alt="">
+        </div>
+        <div class="col-5">
+            <img src="slike/Fotter/new holland.png" alt="">
+        </div>
+        </div>
+    </footer>
+  </div>
+
+
+
+  <script>
+      var MenuItems= document.getElementById("MenuItems");
+      MenuItems.style.maxHeight="0px";
+
+
+      function menutoggle(){
+          if(MenuItems.style.maxHeight=="0px"){
+            MenuItems.style.maxHeight="200px"
+          }
+          else{
+            MenuItems.style.maxHeight="0px"
+          }
+      }
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+    margin-right: 25px;
+}
+
+p{
+    color: #555;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 130px;
+    
+}
+.pocetna{
+    background: #E1C7C7;
+}
+
+.col-1{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-1 img{
+    padding: 50px 50px;
+    margin: 0px -50px;
+
+}
+.col-1 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;}
+
+
+
+.col-1-1{
+    flex-basis: 0;
+    min-width: 600px;
+    min-height: 300px;
+}
+.col-1-1 img{
+    padding: 50px 50px;
+    margin: 0px -50px;
+}
+.col-1-1 h1{
+    font-size: 35px;
+    line-height: 10px;
+    margin: 0px 0;}
+.col-1-1 h3{
+    margin-top: 10px;
+    font-weight:normal;
+}
+
+
+.col-1-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    margin-top: 130px;
+    margin-left: 30px;
+}
+.col-1-2 img{
+    padding: 50px 50px;
+    margin: 0px -50px;
+
+}
+.col-1-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;}
+
+
+
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    margin-top: 100px;
+    margin-left: -50px;
+}
+.col-2 img{
+    /*padding: -1px -1px;*/
+    margin-right: 100px;
+    border: 4px solid #555;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 5px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+}
+
+.categories{
+    margin: 70px 0;
+}
+
+.col-3{
+    flex-basis: 30%;
+    min-width: 313px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    border: 5px solid #555;
+}
+.col-3 img{
+    
+    height:250px;
+    width: 300px; 
+}
+
+.col-3-1{
+    flex-basis: 30%;
+    min-width:350px;
+    /*margin-bottom: 30px;*/
+    /*margin-right: 2px;*/
+    border: 5px solid #555;
+    min-height: 325px;
+
+    
+}
+.col-3-1 img{
+    object-fit:scale-down;
+    height:350px;
+    width: 340.5px;
+}
+
+
+.col-3-2{
+    flex-basis: 30%;
+    min-width: 200px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    min-height: 150px;
+
+    
+}
+.col-3-2 img{
+    object-fit:scale-down;
+    height:250px;
+    width: 220px;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+.col-4 img{
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title::after{
+    content: " ";
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.offer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 130px;
+}
+
+
+/*----jedan traktor-----*/
+
+
+.jedan-traktor{
+    margin-top: 80px;
+}
+
+.jedan-traktor .col-2 img{
+    padding: 0;
+}
+
+.jedan-traktor .col-2{
+    padding: 20px;
+}
+
+
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 200px;
+    height: 100px;
+}
+
+
+
+/*--Korisnicki racun---*/
+
+
+.korisnickiRacun{
+    padding: 50px 0;
+    background:  #E1C7C7;
+}
+
+.form-container{
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0,0.1);
+    overflow: hidden;
+}
+
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.form-btn{
+    display: inline-block;
+
+}
+
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+
+
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+
+}
+
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+form .btn:focus{
+    outline:none;
+}
+
+#LogiranjeForm{
+    left: -300px;
+
+}
+#RegistracijaForm{
+    left: 0px;
+}
+
+form a{
+    font-size: 12px;
+}
+
+#Indicator{
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+
+
+
+
+/*Kontakti*/
+
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Some left and right padding inside the container2 */
+  .container2 {
+    padding: 0 16px;
+    
+  }
+  
+  /* Clear floats */
+  .container2::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+
+  /*footer*/
+
+
+  #page-container {
+    position: relative;
+    min-height: 15vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 3rem;    /* Footer height */
+  }
+  
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;       
+    background-color:#E1C7C7;      /* Footer height */
+  }
+
+
+   
+
+.col-5 img{
+    /*padding: -1px -1px;*/
+    margin-right: 10px;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    margin-top: 13px;
+    border:   4px solid #fff;
+    background-color: #fff;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+    
+}
+
+@media only screen and (max-width: 800px) {
+    nav ul{
+        position:absolute;
+        top:70px;
+        left:0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+    }
+    nav ul li{ 
+        display:block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+    .row{
+        text-align: center;
+    }
+    .col-1,.col1-1,.col-1-2,.col-2,.col-3, .col-3-2,.col-4 .column{
+        flex-basis: 100%;
+    }
+    .small-img-row .col-3-2{
+        margin-right:1px;
+    }
+
+    .col-1-1 h1{
+        margin-top: 50px;
+        margin-right: 200px;   
+    }
+    .col-1-1 h3{
+        margin-top: 50px;
+        margin-right: 200px;    
+    }
+   
+}
+
+
+@media only screen and (max-width: 650px) {
+
+    .row{
+        text-align: center;
+    }
+    .col-1,.col1-1,.col-1-2,.col-2,.col-3, .col3-1,.col-4{
+        flex-basis: 100%;
+        margin-right: 200px;
+    }
+    
+
+    .col-1-1 h1{
+        margin-top: 50px;
+        margin-right: 200px;   
+    }
+    .col-1-1 h3{
+        margin-top: 50px;
+        margin-right: 200px;    
+    }
+   
+}
+

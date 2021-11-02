@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Svi trakori</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="Slike/logo3.png" width="200px"></a>
+        
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li>
+                        <a href="index.html">Početna</a>
+                        <a href="products.html">Traktori</a>
+                        <a href="Kontakti.html">Kontakti</a>
+                        <a href="korisnickiracun.html">Korisnički račun</a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="Slike/menu-icon.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+
+    </div>
+
+
+
+<!-----detalji traktora ---->
+
+
+    <div class="small-container jedan-traktor">
+        <a href="index.html"><p8">Početna>></p8></a><a href="products.html"><p8>Traktori>></p8></a> <p8>Explorer 100 MD LS</p8>
+        <h1 style="margin-top:50px; font-size: 35px; font: Tahoma ;"> EXPLORER 100 MD LS</h1>
+        
+        <div class="row">
+            <div class="col-3-1">
+                <img src = "slike/Explorer100/Explorer100.jpg"  width = "200px"id="slikaTraktora">
+            </div>
+            <div class="small-img-row">
+                <div class="col-3-2">
+                    <img src="Slike/Explorer100/explorer100-1.jpg" width="250px  " class="mala-slika">
+                </div>
+                <div class="col-3-2">
+                    <img src="Slike/Explorer100/explorer100-2.jfif" width="270px" class="mala-slika">
+                </div>
+                <div class="col-3-2">
+                    <img src="Slike/Explorer100/explorer100-3.jpg" width="160px" class="mala-slika">
+                </div>
+                <div class="col-3-2">
+                    <img src="Slike/Explorer100/explorer100-4.jpg" width="100%" class="mala-slika">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <p style="margin-top:-80px;">S više od 130.000 prodanih primjeraka od 1983., Explorer je jedan od najpopularnijih 
+                    SAME traktora svih vremena. Danas je Explorer opremljen brojnim dodatnim značajkama,
+                    a asortiman je proširen, što ga čini idealnim suputnikom za svakog poljoprivrednika
+                    koji traži svestran, udoban i pouzdan stroj na koji se u svakom trenutku može osloniti. 
+                    Novi Explorer nudi vrhunske performanse i sigurnosti, kvaliteti i snazi.
+                </p>
+            </div>
+            
+            <div class="col-1-2">
+                <h3 style="margin-top: -100px;">Specifikacija<i class="fa fa-indent"></i></h3>
+                <ul>
+                    <li>snaga 78 kW / 105 KS (nominalna snaga 78 kW) </li>
+                    <li>hidrostatsko upravljanje s neovisnom pumpom</li>
+                    <li>blokada prednjeg i stražnjeg diferencijala s elektrohidrauličkim uključivanjem</li>
+                    <li>FARMotion EURO 3B motor „common rail“ 4 cil., turbina, intercooler, vod. hlađenje, 3849 ccm</li>
+                    <li>podizna sila hidraulike 3600 kg</li>
+                    <li>mehaničko uključivanje prednjeg pogona</li>
+                    <li>komforna kabina s grijanjem i ventilacijom, priprema za radio s dva zvučnika</li>
+                    <li>trozglobna poteznica kat. II s integriranim kuglama</li>
+                    <li>mjenjač 10/10 – 40 km/h s mehaničkim inverserom s lijeve strane</li>
+                    <li>spremnik goriva 130 lit.</li>
+                    <li>hidraulička pumpa 55 lit./min</li>
+                    <li>stražnje priključno vratilo (PTO) 540 °/min</li>
+                    <li>elektronski regulator motora</li>
+                    <li>2 dvoradna stražnja daljinska hidraulička izvoda</li>
+                    <li>stražnje gume 16.9R34</li>
+                    <li>prednje gume 14.9R24</li>
+                    <li>komformo (PVC) sjedište</li>
+                    <li>proširenje stražnjih blatobrana</li>
+                    <li>2kuka za prikolicu kat. “CEE”, brzopodesiva po visini</li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+ 
+
+    <script>
+        var slikaTraktora=document.getElementById("slikaTraktora");
+        var MalaSlika= document.getElementsByClassName("mala-slika");
+
+        MalaSlika[0].onclick = function(){
+            slikaTraktora.src= MalaSlika[0].src;
+        }
+        MalaSlika[1].onclick = function(){
+            slikaTraktora.src= MalaSlika[1].src;
+        }
+        MalaSlika[2].onclick = function(){
+            slikaTraktora.src= MalaSlika[2].src;
+        }
+        MalaSlika[3].onclick = function(){
+            slikaTraktora.src= MalaSlika[3].src;
+        }
+    </script>
+
+
+<div id="page-container">
+    <div id="content-wrap">
+      <!-- all other page content -->
+    </div>
+    <footer id="footer">
+        <div class="row">
+        <div class="col-5">
+            <img src="slike/Fotter/sama.jpg" alt="">
+
+        </div>
+        <div class="col-5">
+            <img src="slike/Fotter/deutz fahr.svg" >
+
+        </div>
+        <div class="col-5">
+            <img src="slike/Fotter/john deere.png" alt="">
+        </div>
+        <div class="col-5">
+            <img src="slike/Fotter/new holland.png" alt="">
+        </div>
+        </div>
+    </footer>
+  </div>
+
+
+  <script>
+    var MenuItems= document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight=="0px"){
+          MenuItems.style.maxHeight="200px"
+        }
+        else{
+          MenuItems.style.maxHeight="0px"
+        }
+    }
+</script>
+
+</body>
+</html>

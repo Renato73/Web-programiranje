@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Korisnički račun</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="Slike/logo3.png" width="200px"></a>
+        
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li>
+                        <a href="index.html">Početna</a>
+                        <a href="products.html">Traktori</a>
+                        <a href="Kontakti.html">Kontakti</a>
+                        <a href="korisnickiracun.html">Korisnički račun</a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="Slike/menu-icon.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        </div>
+
+<!--Korinički račun-->
+    <div class="korisnickiRacun">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="Slike/pocetna2.jpg" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        	<div class="form-btn">
+                                <span onclick="login()">Prijava</span>
+                                <span onclick="register()">Registracija</span>
+                                <hr id="Indicator">
+                            </div>
+                            <form id="LogiranjeForm">
+                                <input type="text" placeholder="Korisničko ime">
+                                <input type="password" placeholder="Lozinka">
+                                <button type="submit" class="btn">Prijava</button>
+                                <a href="">Zaboravljena lozinka?</a>
+                            </form>
+
+                            <form id="RegistracijaForm">
+                                <input type="text" placeholder="Korisničko ime">
+                                <input type="text" placeholder="Email">
+                                <input type="password" placeholder="Lozinka">
+                                <button type="submit" class="btn">Registracija</button>
+                            </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+<!--js for toggle form-->
+
+    <script>
+        var LoginForm=document.getElementById("LogiranjeForm");
+        var RegFrom=document.getElementById("RegistracijaForm");
+        var Indicator= document.getElementById("Indicator");
+
+            function register(){
+                RegFrom.style.transform="translateX(0px)";
+                LoginForm.style.transform="translateX(0px)";
+                Indicator.style.transform="translateX(100px)";
+            }
+            
+            function login(){
+                RegFrom.style.transform="translateX(300px)";
+                LoginForm.style.transform="translateX(300px)";
+                Indicator.style.transform="translateX(0px)";
+            }
+    </script>
+
+
+
+<div id="page-container">
+    <div id="content-wrap">
+      <!-- all other page content -->
+    </div>
+    <footer id="footer">
+        <div class="row">
+        <div class="col-5">
+            <img src="slike/Fotter/sama.jpg" alt="">
+
+        </div>
+        <div class="col-5">
+            <img src="slike/Fotter/deutz fahr.svg" >
+
+        </div>
+        <div class="col-5">
+            <img src="slike/Fotter/john deere.png" alt="">
+        </div>
+        <div class="col-5">
+            <img src="slike/Fotter/new holland.png" alt="">
+        </div>
+        </div>
+    </footer>
+  </div>
+
+
+  <script>
+    var MenuItems= document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight=="0px"){
+          MenuItems.style.maxHeight="200px"
+        }
+        else{
+          MenuItems.style.maxHeight="0px"
+        }
+    }
+</script>
+</body>
+</html>
